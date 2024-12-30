@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    #bgimg{
+      background-image:linear-gradient(rgba(255,255,255,0.95),rgba(0,0,0,0.3)) ,url(https://res.cloudinary.com/dngn2hghx/image/upload/v1735280733/fqlyb7kjln1onsxkzb83.jpg);
+      background-repeat: no-repeat;
+      background-size:auto;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      margin-top: 20px;
+    }
+
+    .text-success {
+      color: #28a745;
+    }
+
+    h3 {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+    <div class="row d-flex flex-row container-fluid align-items-ceter justify-content-center justify-content-around">
+        <img src="https://res.cloudinary.com/dngn2hghx/image/upload/v1735291421/cvmdyxlphyoiawcnajxh.jpg" alt="logo" class="img-fluid p-1 col-md-2">
+        <img src="https://res.cloudinary.com/dngn2hghx/image/upload/v1735274935/tcqveo4uax4sxl4c2svj.jpg" alt="logo" class="img-fluid p-1 col-md-2" style="height: 20%;">
+    </div>
+    <hr>
+    <form  action="https://script.google.com/macros/s/AKfycbzS3eCN5sYVa1LDu3rt8r09dMkEv1wpuWXkVQ44Q3uAclY6-dJ2dX-drRq-z28BTLCx/exec" method="post" class="p-2">
+    <h2 class="text-center text-success">Customer Feedback</h2>
+    <div class="row" id="bgimg">
+        <div class="col-md-2 col-sm-12">
+            <div class="container-fluid">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your name">
+                </div>
+          
+                <div class="form-group">
+                  <label for="place">Place:</label>
+                  <input type="text" class="form-control" id="place" name="place" required placeholder="Enter your place">
+                </div>
+          
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email">
+                </div>
+            </div>
+        </div>
+        <!-- Yes or No Questions -->
+        <div class="col-md-5 col-sm-12">
+            <div class="form-group">
+                <label for="isEasy">Is Hub display OK and displaying the correct values?</label>
+                <select class="form-control" id="isEasy" name="isEasy" required>
+                 <option value="" selected disabled>SelectOption</option>
+                  <option value="true">Yes</option>
+                  <option value="false">No</option>
+                </select>
+              </div>
+        
+              <div class="form-group">
+                <label for="isEcoFriendly">Is the data transmission from Hub to GW continuous?</label>
+                <select class="form-control" id="isEcoFriendly" name="isEcoFriendly" required>
+                 <option value="" selected disabled>SelectOption</option>
+                  <option value="true">Yes</option>
+                  <option value="false">No</option>
+                </select>
+              </div>
+        
+              <div class="form-group">
+                <label for="isManualHelpful">Are you able to print out data reports?</label>
+                <select class="form-control" id="isManualHelpful" name="isManualHelpful" required>
+                  <option value="" selected disabled>SelectOption</option>
+                  <option value="true">Yes</option>
+                  <option value="false">No</option>
+                </select>
+              </div>
+        
+              <div class="form-group">
+                <label for="isWorthPrice">Are the colors set in threshold limits displaying correctly?</label>
+                <select class="form-control" id="isWorthPrice" name="isWorthPrice" required>
+                 <option value="" selected disabled>SelectOption</option>
+                  <option value="true">Yes</option>
+                  <option value="false">No</option>
+                </select>
+              </div>
+        
+              <div class="form-group">
+                <label for="isAlertsWorking">Are the alerts: SMS & Alarms working ok?</label>
+                <select class="form-control" id="isAlertsWorking" name="isAlertsWorking" required>
+                 <option value="" selected disabled>SelectOption</option>
+                  <option value="true">Yes</option>
+                  <option value="false">No</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="isTrainingAdequate">Is the training imparted on the dashboard features at the time of installation adequate?</label>
+                <select class="form-control" id="isTrainingAdequate" name="isTrainingAdequate" required>
+                 <option value="" selected disabled>SelectOption</option>
+                  <option value="true">Yes</option>
+                  <option value="false">No</option>
+                </select>
+              </div>
+        </div>
+
+          <!-- Additional Questions -->
+        <div class="col-md-5 col-sm-12">
+            <div class="form-group">
+                <label for="isSystemUsedAdequately">Are the Admin/QA/User using the system adequately?</label>
+                <select class="form-control" id="isSystemUsedAdequately" name="isSystemUsedAdequately" required>
+                 <option value="" selected disabled>SelectOption</option>
+                  <option value="true">Yes</option>
+                  <option value="false">No</option>
+                </select>
+              </div>
+            <div class="form-group">
+                <label for="isInterestedInAdditionalSensors">Would you be interested in getting additional sensors connected?</label>
+                <select class="form-control" id="isInterestedInAdditionalSensors" name="isInterestedInAdditionalSensors" required>
+                 <option value="" selected disabled>SelectOption</option>
+                  <option value="true">Yes</option>
+                  <option value="false">No</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="isInterestedInSensorSystems">Would you be interested in getting additional Sensor+ systems in your plant?</label>
+                <select class="form-control" id="isInterestedInSensorSystems" name="isInterestedInSensorSystems" required>
+                 <option value="" selected disabled>SelectOption</option>
+                  <option value="true">Yes</option>
+                  <option value="false">No</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="willRecommend">Will you recommend Sensor+ system to others?</label>
+                <select class="form-control" id="willRecommend" name="willRecommend" required>
+                 <option value="" selected disabled>SelectOption</option>
+                  <option value="true">Yes</option>
+                  <option value="false">No</option>
+                </select>
+              </div>
+            <div class="form-group">
+                <label for="q1">What sections in the User Manual have you found most useful?</label>
+                <input type="text" class="form-control" id="q1" name="q1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="q2">What additional sections would be useful if added to the User Manual?</label>
+                <input type="text" class="form-control" id="q2" name="q2">
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary mr-1">Submit</button>
+      <!-- Reset Button -->
+      <button type="button" class="btn btn-secondary ml-1" id="resetForm">Clear</button>
+  </div>
+  
+</form>
+<hr>
+<footer class="d-flex flex-row justify-content-around mt-3">
+  <p>© All rights reserved by Growth Accelerator Technologies Pvt Ltd 2024</p>
+  <p><b>Contact No :</b> +919888334664</p>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Handle form submission
+      $('#questionnaireForm').on('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+        
+        var formData = $(this).serialize(); // Serialize the form data
+
+        // Send the form data to Google Apps Script
+        $.ajax({
+          url: 'https://script.google.com/macros/s/AKfycbzS3eCN5sYVa1LDu3rt8r09dMkEv1wpuWXkVQ44Q3uAclY6-dJ2dX-drRq-z28BTLCx/exec',  // Your script URL
+          type: 'POST',
+          data: formData,
+          success: function(response) {
+            alert('Form submitted successfully!');
+            $('#questionnaireForm')[0].reset(); // Reset the form after submission
+          },
+          error: function() {
+            alert('There was an error submitting the form. Please try again.');
+          }
+        });
+      });
+
+      // Reset the form when the "Clear" button is clicked
+      $('#resetForm').on('click', function () {
+        $('#questionnaireForm')[0].reset(); // Reset the form
+      });
+    });
+  </script>
+
+</body>
+</html>
