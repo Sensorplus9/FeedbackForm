@@ -39,13 +39,13 @@
     <img src="https://res.cloudinary.com/dngn2hghx/image/upload/v1735291421/cvmdyxlphyoiawcnajxh.jpg" alt="logo" class="img-fluid p-1 col-md-2">
   </div>
   <hr>
-  <form action="https://script.google.com/macros/s/AKfycbzS3eCN5sYVa1LDu3rt8r09dMkEv1wpuWXkVQ44Q3uAclY6-dJ2dX-drRq-z28BTLCx/exec" method="post" class="p-2" id="questionnaireForm">
+  <form action="https://script.google.com/macros/s/AKfycbwcj_SxplVp46T4QPIZWDDpXiQZnqCwD0dRDpGLieoMvRCpTLx9kbD6APyTdcl9m9cK/exec" method="post" class="p-2" id="questionnaireForm">
     <h2 class="text-center text-success">Feedback Form</h2>
     <div class="row" id="bgimg">
       <div class="col-md-3 col-sm-12">
         <div class="container-fluid">
           <div class="form-group">
-            <label for="name">Customer Name:</label>
+            <label for="name">Employee Name:</label>
             <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your name">
           </div>
           <div class="form-group">
@@ -61,86 +61,97 @@
       <!-- Yes or No Questions -->
       <div class="col-md-4 col-sm-12">
         <div class="form-group">
+          <label for="isEasy">Leads Through</label>
+          <select class="form-control" id="isEasy" name="isEasy" required>
+            <option value="" selected disabled>Select Option</option>
+            <option value="Email">Email</option>
+            <option value="Telephone">Telephone</option>
+          </select>
+        </div>
+        <div class="form-group">
           <label for="isEasy">Is Hub display OK and displaying the correct values?</label>
           <select class="form-control" id="isEasy" name="isEasy" required>
             <option value="" selected disabled>Select Option</option>
-            <option value="true">Yes</option>
-            <option value="false">No</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
           </select>
         </div>
         <div class="form-group">
           <label for="isEcoFriendly">Is the data transmission from Hub to GW continuous?</label>
           <select class="form-control" id="isEcoFriendly" name="isEcoFriendly" required>
             <option value="" selected disabled>Select Option</option>
-            <option value="true">Yes</option>
-            <option value="false">No</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
           </select>
         </div>
         <div class="form-group">
           <label for="isManualHelpful">Are you able to print out data reports?</label>
           <select class="form-control" id="isManualHelpful" name="isManualHelpful" required>
             <option value="" selected disabled>Select Option</option>
-            <option value="true">Yes</option>
-            <option value="false">No</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
           </select>
         </div>
         <div class="form-group">
           <label for="isWorthPrice">Are the colors set in threshold limits displaying correctly?</label>
           <select class="form-control" id="isWorthPrice" name="isWorthPrice" required>
             <option value="" selected disabled>Select Option</option>
-            <option value="true">Yes</option>
-            <option value="false">No</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
           </select>
         </div>
-        <div class="form-group">
-          <label for="isAlertsWorking">Are the alerts: SMS & Alarms working ok?</label>
-          <select class="form-control" id="isAlertsWorking" name="isAlertsWorking" required>
-            <option value="" selected disabled>Select Option</option>
-            <option value="true">Yes</option>
-            <option value="false">No</option>
-          </select>
-        </div>
+       
         <div class="form-group">
           <label for="isTrainingAdequate">Is the training imparted on the dashboard features at the time of installation adequate?</label>
           <select class="form-control" id="isTrainingAdequate" name="isTrainingAdequate" required>
             <option value="" selected disabled>Select Option</option>
-            <option value="true">Yes</option>
-            <option value="false">No</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
           </select>
         </div>
-      </div>
-      <!-- Additional Questions -->
-      <div class="col-md-5 col-sm-12">
         <div class="form-group">
           <label for="isSystemUsedAdequately">Are the Admin/QA/User using the system adequately?</label>
           <select class="form-control" id="isSystemUsedAdequately" name="isSystemUsedAdequately" required>
             <option value="" selected disabled>Select Option</option>
-            <option value="true">Yes</option>
-            <option value="false">No</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
           </select>
         </div>
         <div class="form-group">
           <label for="isInterestedInAdditionalSensors">Would you be interested in getting additional sensors connected?</label>
           <select class="form-control" id="isInterestedInAdditionalSensors" name="isInterestedInAdditionalSensors" required>
             <option value="" selected disabled>Select Option</option>
-            <option value="true">Yes</option>
-            <option value="false">No</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
           </select>
         </div>
         <div class="form-group">
           <label for="isInterestedInSensorSystems">Would you be interested in getting additional Sensor+ systems in your plant?</label>
           <select class="form-control" id="isInterestedInSensorSystems" name="isInterestedInSensorSystems" required>
             <option value="" selected disabled>Select Option</option>
-            <option value="true">Yes</option>
-            <option value="false">No</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+      </div>
+      <!-- Additional Questions -->
+      <div class="col-md-5 col-sm-12">
+        
+
+        <div class="form-group">
+          <label for="isAlertsWorking">Are the alerts: SMS & Alarms working ok?</label>
+          <select class="form-control" id="isAlertsWorking" name="isAlertsWorking" required>
+            <option value="" selected disabled>Select Option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
           </select>
         </div>
         <div class="form-group">
           <label for="willRecommend">Will you recommend Sensor+ system to others?</label>
           <select class="form-control" id="willRecommend" name="willRecommend" required>
             <option value="" selected disabled>Select Option</option>
-            <option value="true">Yes</option>
-            <option value="false">No</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
           </select>
         </div>
         <div class="form-group">
@@ -151,6 +162,40 @@
           <label for="q2">What additional sections would be useful if added to the User Manual?</label>
           <input type="text" class="form-control" id="q2" name="q2">
         </div>
+
+
+
+        <div class="form-group">
+          <label for="q3">Company Block Detatils</label>
+          <input type="text" class="form-control" id="q3" name="q3" required>
+        </div>
+
+        <div class="form-group">
+          <label for="q4">Sensor Features Requirement</label>
+          <input type="text" class="form-control" id="q4" name="q4" required>
+        </div>
+
+        <div class="form-group">
+          <label for="q5">Process Details</label>
+          <input type="text" class="form-control" id="q5" name="q5" required>
+        </div>
+
+        <div class="form-group">
+          <label for="q6">Certification</label>
+          <input type="text" class="form-control" id="q6" name="q6" required>
+        </div>
+
+        <div class="form-group">
+          <label for="q7">Next Steps</label>
+          <input type="text" class="form-control" id="q7" name="q7" required>
+        </div>
+
+        <div class="form-group">
+          <label for="q8">General</label>
+          <input type="text" class="form-control" id="q8" name="q8" required>
+        </div>
+
+        
       </div>
     </div>
     <div class="d-flex justify-content-center align-items-center">
